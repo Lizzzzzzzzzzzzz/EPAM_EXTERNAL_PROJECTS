@@ -11,7 +11,7 @@ import java.util.Random;
 
 
 public class AudioDisc {
-    public static List<AudioRecord> getAudioRecords(int amount) {
+    public static List<AudioRecord> writeDownAudioRecords(int amount) {
         List<AudioRecord> records = new ArrayList<AudioRecord>();
         Random random = new Random();
         while (amount-- > 0) {

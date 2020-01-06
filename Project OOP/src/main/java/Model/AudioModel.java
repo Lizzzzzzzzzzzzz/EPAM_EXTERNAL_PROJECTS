@@ -12,7 +12,7 @@ public class AudioModel {
     private List<AudioRecord> discRecords;
 
     public AudioModel() {
-        records = AudioDisc.getAudioRecords(10);
+        records = AudioDisc.writeDownAudioRecords(10);
         this.discRecords = discRecords;
     }
 

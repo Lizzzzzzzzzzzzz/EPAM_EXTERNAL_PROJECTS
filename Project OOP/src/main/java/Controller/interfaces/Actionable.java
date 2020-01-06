@@ -1,5 +1,10 @@
 package Controller.interfaces;
 
+import Model.entity.AudioRecord;
+
+import java.util.List;
+
 public interface Actionable {
-    public void action();
+    public String action();
+
 }

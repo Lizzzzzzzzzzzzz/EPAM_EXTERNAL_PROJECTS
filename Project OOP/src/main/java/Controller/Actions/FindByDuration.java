@@ -7,10 +7,9 @@ import Model.entity.AudioRecord;
 
 import java.util.List;
 
-public class FindByDuration implements Actionable2 {
+public class FindByDuration implements Actionable2{
 
     private AudioModel audioModel = new AudioModel();
-
 
     @Override
     public void action(double d1, double d2) {
@@ -20,7 +19,6 @@ public class FindByDuration implements Actionable2 {
             if (record.getDuration() > d1 && record.getDuration() < d2) {
             System.out.println(record);
         }
-
     }
     }
 }
