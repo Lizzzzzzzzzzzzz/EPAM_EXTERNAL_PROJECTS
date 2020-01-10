@@ -19,8 +19,10 @@ public class Controller {
         CountDuration countDuration = new CountDuration();
         SortByStyle sortByStyle = new SortByStyle();
         FindByDuration findByDuration = new FindByDuration();
+
         while (inputCommand.getCommand() != 0)
         PrintCommands.printComands();
+
             switch (inputCommand.getCommand()) {
                 case 1:
                     printResults.printRes(audioDisc.writeDownAudioRecords(random.nextInt()).toString());
